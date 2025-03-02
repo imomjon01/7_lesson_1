@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="bg-dark text-white text-center">Student</h1>
+
+<form onsubmit="add(event)">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    Add Student
+                </div>
+                <div class="card-body">
+                    <div>
+                        <label>
+                            FirstName:
+                            <input required id="first_name" class="form-control" type="text">
+                        </label><label>
+                        LastName
+                        <input required id="last_name" class="form-control" type="text">
+                    </label><label>
+                        Age:
+                        <input required id="age" class="form-control" type="number">
+                    </label>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-dark">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            Age
+        </th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+
+
+<script src="lesson.js"></script>
+</body>
+</html>

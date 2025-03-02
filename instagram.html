@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: #0a0909;
+            padding: 20px;
+            border-radius: 8px;
+            width: 350px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        .container h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 93%;
+            padding: 10px;
+            margin: 10px 0;
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: white;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: #0095f6;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background: #0078d4;
+        }
+        .separator {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .separator::before, .separator::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #444;
+        }
+        .separator span {
+            padding: 0 10px;
+            color: #aaa;
+        }
+        .facebook-login {
+            color: #0095f6;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .forgot-password {
+            color: #aaa;
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .signup a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Instagram</h1>
+    <input type="text" placeholder="Phone number, username, or email">
+    <input type="password" placeholder="Password">
+    <button class="login-btn">Log in</button>
+
+    <div class="separator">
+        <span>OR</span>
+    </div>
+
+    <a href="#" class="facebook-login">Log in with Facebook</a>
+    <a href="#" class="forgot-password">Forgot password?</a>
+
+    <div class="signup">
+        Don't have an account? <a href="#">Sign up</a>
+    </div>
+</div>
+
+</body>
+</html>
