@@ -42,7 +42,7 @@ function draw() {
                 <td>${student.firstName}</td>
                 <td>${student.lastName}</td>
                 <td>${student.age}</td>
-                <td>${student.gender === "Male" ? "Male 🤵🏻" : "Female 🤵🏻‍♀️"}</td>
+                <td>${student.gender === "Male" ? "Male" : "Female"}</td>
                 <td>${student.faculty}</td>
                 <td>
                     <button class="btn btn-warning btn-sm" onclick="edit(${index})">Edit</button>
